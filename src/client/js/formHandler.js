@@ -2,7 +2,11 @@ export function handleSubmit(event) {
     event.preventDefault();
 
     // Getting input value
-    let formText = document.getElementById('name').value
+    let formText = document.getElementById('name').value;
+    if(formText.match(/^(?:(\d*)(?:\.(\d*))?|\s*)$/)) {
+        alert('Please type something!!!');
+        return
+    }
     formText = {
         'article': formText
     }
