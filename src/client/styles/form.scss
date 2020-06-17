@@ -1,0 +1,41 @@
+form {
+    border: none;
+    background-color: #eceff1;
+    border-radius: 3px;
+    padding: 40px;
+    box-shadow: 0 16px 60px -5px rgba(0,0,0,.2);
+    border-radius: 10px;
+}
+
+.input {
+    padding: 5px 20px;
+    width: 100%;
+    line-height: 16px;
+    color: #fff;
+    margin: 10px 0;
+    background-color: #597ba2;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    outline: none;
+    margin-bottom: 1rem;
+    &::placeholder{
+        color: #fff;
+    }
+}
+
+
+.submit{
+    box-sizing: border-box;
+    padding: 10px 70px;
+    color: #fff;
+    background-color: #597ba2;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+}

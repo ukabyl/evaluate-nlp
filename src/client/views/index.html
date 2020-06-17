@@ -14,30 +14,38 @@
 
         <header>
             <div class="">
-                Logo
+                NLP
             </div>
             <div class="">
-                navigation
+                Udacity project
             </div>
         </header>
 
         <main>
             <section>
                 <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                    <input class="input" id="name" type="text" name="input" value="" placeholder="Name">
+                    <input class="submit" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             <section>
 
             <section>
-                <strong>Form Results:</strong>
+                <strong class="results">Form Results:</strong>
                 <div id="results"></div>
             </section>
         </main>
 
         <footer>
-            <p>This is a footer</p>
+            <p>by <a href="https://github.com/ukabyl/">ukabyl</a></p>
         </footer>
 
+        <script>
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
     </body>
 </html>
